@@ -22,8 +22,8 @@
             matrix[row][j] = 0 
         }
     }
-    console.log("matrix:::::::::",matrix)
+    //console.log("matrix:::::::::",matrix)
 };
 
 let matrix = [[1,0,1],[1,0,1],[1,1,1]]
-console.log("jhgndbchfbv::::::::::::",setZeroes(matrix))
+setZeroes(matrix)
