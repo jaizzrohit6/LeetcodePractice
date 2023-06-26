@@ -120,3 +120,24 @@ console.log(maxvalue)
 
 
 
+let printName = function(hometown,village){
+    console.log(this.firstname + " " + this.lastname + " lives in "+ hometown + " at exact loc " + village )
+}
+
+let name = {
+    firstname :  "Rohit",
+    lastname : "Jaiswal"
+}
+
+let name2 = {
+    firstname :  "Garima",
+    lastname : "Mishra"
+}
+
+printName.call(name,"Patna","mahua")
+printName.apply(name,["Patna","mahua"])
+let printBindName = printName.bind(name,"Patna","mahua")
+printBindName()
+
+
+

@@ -1,3 +1,43 @@
+// setInterval(() => { console.log("8") })
+// console.log("1")
+// setImmediate(() => {
+//     console.log("2")
+// });
+// setTimeout(() => { console.log("4") }, 0)
+// setTimeout(() => { console.log("7") }, 10)
+// const pro = Promise.resolve("3")
+// pro.then((res) => console.log(res))
+// process.nextTick(() => console.log("5"))
+// console.log("6")
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Welcome to Programiz!");
+
+const a = {
+    prop1: 10,
+    prop2: 20
+}
+a.prop1 = 5
+
+console.log(a)
+
+
+// let http = require("http")
+// let app = express()
+
+// app.get('/getusername',function(req,res){
+//     console.log("get method called")
+// })
+
+// app.listen('8080',function(req,res){
+//     console.log("http://localhost:8080")
+// })
+
+
+
 // // var a = ["Hello", "Hi", { test: "Data"}]
 // //destructuring to split variable
 // // const add = (a,b) => {
@@ -277,3 +317,218 @@
 // let person1 = {...person}
 // console.log(person1.age=undefined)
 // console.log(person1)
+
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// console.log("Welcome to Programiz!");
+
+// const characters = [
+//     {firstName: 'john', lastName: 'Doe', age: 55},
+//     {firstName: 'bane', lastName: 'Doe', age: 30},
+//     {firstName: 'aack', lastName: 'Doe', age: 35},
+//     {firstName: 'cill', lastName: 'Doe', age: 40},
+//     {firstName: 'doe', lastName: 'Doe', age: 15}
+// ];
+
+// characters.sort((a, b) => {
+//   if (a.firstName < b.firstName) {
+//     return -1;
+//   }
+//   if (a.firstName > b.firstName) {
+//     return 1;
+//   }
+//   return 0;
+// });
+
+
+let users = [
+    {firstName: 'john', age: 55},
+    {firstName: 'bane', age: 30},
+    {firstName: 'aack', age: 35},
+    {firstName: 'cill', age: 40},
+    {firstName: 'doe', age: 15}
+]
+
+let str = "smvdnvnfb"
+
+let newstr = str.split('').sort().join("")
+console.log(newstr)
+
+
+users.sort((a,b)=> {
+    return a.firstName > b.firstName ? 1 : -1
+})
+
+console.log(users)
+
+
+
+
+
+
+
+
+
+
+
+
+// import { EventEmitter } from 'events';
+// const eventEmitr = require("events");
+// const eventEmitter = new EventEmitter();
+ 
+// eventEmitr.on('myEvent', (data) => {
+//      console.log(data);
+// });
+ 
+
+
+// async function myfunc(){
+//     let delhiWeather = new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("21 aug")
+//         },2000)
+//     })
+//     let bangWeather = new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("26 aug")
+//         },2000)
+//     })
+    
+//     let delhiW = await delhiWeather
+//     let bangW =  await bangWeather
+// }
+
+// myfunc()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let request = {
+//     name : 'PN',
+//     rollNo : 24,
+//     classDetail : {
+//         language : 'English',
+//         division : 'A',
+//         location : {
+//             city : 'Bangalore',      
+//         }
+//     }
+// }
+ 
+// function searchObj(obj, keyword){
+//     let arr = Object.keys(obj)
+//     let arr1 = Object.keys(obj.classDetail)
+//   if(arr.includes(keyword) || arr1.includes(keyword)){
+//       return false
+//   }
+//   else{
+//       return true
+//   }
+//   //if( arr.includes(keyword.toString()) && )
+// }
+ 
+// console.log(searchObj (request, 'English')) // should return true
+// console.log(searchObj (request, 'rollNo'))  // should return false  
+ 
+// Requirement : write a logic in the function searchObj to search for the keyword(arg2) in the obj(arg1), it should only check with the values of the obj and not the keys, if found then should return boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+// setTimeout(resolve, 100, 'foo');
+// })
+
+
+// Promise.all([promise1,promise2.promise3])
+// .then(promise1Response=>{
+//     let promise2 = promiseresponse2
+//     promise2.then(promiseresponse2=>{
+//         console.log(promiseresponse2)
+//     })
+// })
+
+// let express = require('express')
+// let app = express()
+//    app.get('/')
+
+// let request = require('request')
+// function weather(lattitude,longiture){
+// let optional = {
+//     header : req
+//     uri : "https://localhost:8080/getweather"
+//     correlationId : "test"
+//     queryString : 
+// }
+//     request(optional ,(err,res)=>{
+//         if(err){
+            
+//         }
+//         if(res.statuscode ==200){
+//             let success={
+//                 status:200,
+//                 message: "successfully got result",
+//                 correlatioId: "test"
+//             }
+//         }
+//         return (success)
+//     })
+// }
+
+// let promise1 = new Promise((resolve,reject)=>{
+//     weather(lattitude,longtitude).then(response=>{
+//         resolve(response)
+//     })
+// })
+// let promise2 = new Promise((resolve,reject)=>{
+//         console.log("promise2")
+// })
+// let promise3 = new Promise((resolve,reject)=>{
+//         console.log("promise3")
+    
+// })
+
+// Promise.all([promise1,promise2,promise3]).then((response)=>{
+//     let JsonResponse={
+//         newResponse : response
+//     }
+//     return JsonResponse
+// }).catch()
