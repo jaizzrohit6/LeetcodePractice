@@ -20,7 +20,7 @@
         }
         for(let j = 0 ; j < matrix.length ; j++){
             matrix[row][j] = 0 
-        }
+        } 
     }
     //console.log("matrix:::::::::",matrix)
 };

@@ -1,0 +1,263 @@
+html{
+    font-size: 16px;
+    font-family: 'Helvetica';
+  }
+  body{
+    width: 100%;
+    height: 100%;
+  }
+   
+  .bg {
+    background-image: url("./img-5.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .container img{
+    height: 100%;
+    width: 100%;
+  }
+  .all-tooltip{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+   
+  .tooltip-content{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px #00000020;
+    padding: 30px;
+    border-radius:20px;
+    width: 90vw;
+    max-width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    /* left: -50%; */
+    z-index: 2;
+  }
+  .tooltip-content .arrow{
+    position: absolute;
+    /* width: 10px; */
+    height: 10px;
+    border: 10px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    top: 0px;
+    left: 50%;
+    transform:translate(-50%, -100%) rotate(0deg);
+  }
+  .tooltip-content .arrow1{
+    position: absolute;
+    /* width: 10px; */
+    height: 10px;
+    border: 10px solid transparent;
+    border-top-color: rgb(255, 255, 255);
+    top: 0px;
+    left: 50%;
+    transform:translate(-50%, -100%) rotate(0deg);
+  }
+  .pin{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 80%;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .pin:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    /* animation: puls-effect 1s ease infinite; */
+  }
+  .tooltip.active .tooltip-content{
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+  }
+   
+  /* Custom Style for tooltip-1 */
+   
+  .tooltip-1 .pin{
+    top: 40%;
+    left: 82%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .tooltip-1 .tooltip-content{
+    display: flex;
+    max-width: 500px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    background-color: aliceblue;
+  }
+  .tooltip-1.active .tooltip-content{
+    display: flex;
+  }
+  .tooltip-1 .tooltip-content .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    color:#211d52;
+  }
+  .tooltip-1 .tooltip-content .content h2{
+    font-size: 24px;
+  }
+  /* .tooltip-1 .tooltip-content .content p{
+    font-size: 14px;
+  } */
+   
+  .button-container {
+    text-align: right;
+  }
+  .tooltip-1 .tooltip-content .content button{
+    font-family: 'Helvetica';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    background-color: rgb(163, 147, 202);
+    color: #211d52;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px #00000020;
+  }
+  .tooltip-1 .tooltip-content .content .lock-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #7a259c;
+    color: rgb(256,256,256); /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Custom style for tooltip-2 */
+   
+  .tooltip-2 .pin{
+    top: 20%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+  }
+   
+  .tooltip-2 .tooltip-content{
+    display: flex;
+    max-width: 500px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    background-color: aliceblue;
+  }
+  .tooltip-2.active .tooltip-content{
+    display: flex;
+  }
+  .tooltip-2 .tooltip-content .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tooltip-2 .tooltip-content .content h2{
+    width: 300px;
+    text-align: left;
+    font-size: 24px;
+    margin-block: 5px;
+  }
+  .tooltip-2 .tooltip-content .content button{
+    width: 100px;
+    align-self: flex-end;
+    margin-right: 20px;
+    font-family: 'Helvetica';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    background-color: #211d52;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #00000020;
+  }
+  .tooltip-2 .tooltip-content .content .lock-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #741056;
+    color: rgb(256,256,256);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   
+  .button-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7a259c;
+    color: white;
+  }
+   
+  /* Media Query */
+   
+  @media (max-width: 768px){
+    .tooltip-1 .tooltip-content{
+      flex-direction: column;
+      max-width: 300px;
+    }
+    .tooltip-1 .tooltip-content .content,
+    .tooltip-1 .tooltip-content .img{
+      width: 100%;
+    }
+  }
+   
