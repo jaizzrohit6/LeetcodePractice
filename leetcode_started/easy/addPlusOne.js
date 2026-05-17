@@ -13,3 +13,8 @@ function addPlusOne(digits){
 
 let digits = [1,2,4]
 console.log(addPlusOne(digits))
+
+//output [1,2,5]
+
+digits = [9,9,9]
+console.log(addPlusOne(digits))
