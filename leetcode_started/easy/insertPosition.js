@@ -18,3 +18,5 @@ function insertSearchOption(nums,target){
 let nums = [1,3,5,7]
 let target = 8
 console.log(insertSearchOption(nums,target))
+
+//output 4
