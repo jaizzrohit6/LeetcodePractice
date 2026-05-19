@@ -16,3 +16,4 @@ var mergeTwoLists = function(list1, list2) {
     current.next = list1!==null ? list1:list2
     return dummy.next
 };
+//output [1,1,2,3,4,4]
