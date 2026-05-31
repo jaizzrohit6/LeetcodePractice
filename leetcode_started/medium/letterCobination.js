@@ -11,7 +11,10 @@ function letterCombination(digits){
         console.log(digit)
         const next = []
         for(const prefix of queue){
+            console.log("prefix",prefix)
+            console.log(queue)
             for(const ch of map[digit]){
+                console.log("ch",ch)
                 next.push(prefix + ch)
             }
         }
