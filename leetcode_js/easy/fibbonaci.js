@@ -15,3 +15,21 @@ var fib = function(n) {
     }
     return val1
 };
+
+
+//=======================================================================
+function fibbonacci(n){
+    //wrong reason  0, 1, 1, 2, 3, 5, 8, 13...
+    // if(n < 1) return n
+    // let prev2 = 1
+    // let prev1 = 2
+    // for(let i = 3 ;i<=n;i++){
+    //     let curr = prev1 + prev2
+    //     prev2 = prev1
+    //     prev1 = curr
+    // }
+    // return prev1
+}
+
+let n = 5
+console.log(fibbonacci(n))
