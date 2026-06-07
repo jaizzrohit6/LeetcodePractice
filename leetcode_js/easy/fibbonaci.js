@@ -33,3 +33,18 @@ function fibbonacci(n){
 
 let n = 5
 console.log(fibbonacci(n))
+
+function fibbonacci(num){
+    // n:    0  1  2  3  4  5  6  7   8   9   10
+    // fib:  0  1  1  2  3  5  8  13  21  34  55
+    if(num < 2) return num
+    let prev2 = 1 //1
+    let prev1 = 1 // 2
+    
+    for(let i = 3;i<=num;i++){
+        let curr = prev2 + prev1
+        prev2 = prev1
+        prev1 = curr
+    }
+    return prev1
+}
