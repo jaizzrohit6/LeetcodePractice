@@ -48,3 +48,4 @@ function createBinaryTree(descriptions){
 
 const descriptions = [[20,15,1],[20,17,0],[50,20,1],[50,80,0]]
 console.log(createBinaryTree(descriptions))
+console.log(createBinaryTree([[1,2,1],[1,3,0],[2,4,0]]))
